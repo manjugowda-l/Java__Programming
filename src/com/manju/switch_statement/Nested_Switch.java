@@ -1,7 +1,8 @@
 package com.manju.switch_statement;
 import java.util.Scanner;
 public class Nested_Switch {
-    static void main() {
+    public static void main(String[] args)
+    {
         Scanner in =new Scanner(System.in);
         int empID=in.nextInt();
         String department =in.next();
@@ -12,7 +13,7 @@ public class Nested_Switch {
             case 3 -> {
                 System.out.println("Emp number 3");
                 switch (department) {
-                    case "IT " -> System.out.println("IT DEPARTMENT");
+                    case "IT" -> System.out.println("IT DEPARTMENT");
                     case "MANAGEMENT" -> System.out.println("MANAGEMENT DEPARTMENT");
                     default -> System.out.println("No Deapartment");
                 }
