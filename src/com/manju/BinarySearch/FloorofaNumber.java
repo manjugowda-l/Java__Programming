@@ -1,15 +1,15 @@
 package com.manju.BinarySearch;
 
-public class CeilingOfNumber {
+public class FloorofaNumber {
     static void main() {
         int[] arr={-18,-12,-6,0,12,14,23,52,67,89};
-        int target=14;
-        int ans= Ceiling(arr,target);
+        int target=13;
+        int ans= Floor(arr,target);
 
-        System.out.println("Smallest value greater than or equal to target is  " + ans);
+        System.out.println("Largest value smaller than or equal to target is  " + ans);
 
     }
-    static int Ceiling(int[] arr, int target){
+    static int Floor(int[] arr, int target){
         int start=0;
         int end=arr.length-1;
         boolean isAsc =arr[start]<arr[end];
@@ -36,6 +36,6 @@ public class CeilingOfNumber {
                 }
             }
         }
-        return arr[start];
+        return arr[end];
     }
 }
