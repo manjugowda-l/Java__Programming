@@ -1,4 +1,4 @@
-package com.manju;
+package com.manju.BinarySearch;
 
 public class BinarySearch {
     static void main() {
