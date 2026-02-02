@@ -2,20 +2,20 @@ package com.manju.String;
 
 public class Palindrome {
     static void main() {
-        String str="abcdcba";
+        String str="abcdba";
         System.out.println(isPalindrome(str));
-
     }
     static boolean isPalindrome(String str){
         str=str.toLowerCase();
-        for(int i=0;i<=str.length()/2;i++){
-            char start=str.charAt(i);
-            char end =str.charAt(str.length()-1-i);
-            if(start!=end){
+        int start=0;
+        int end=str.length()-1;
+        while(start<=end){
+            if(str.charAt(start)==str.charAt(end)){
+                start++;
+                end--;
+            }else{
                 return false;
             }
-
-
         }
     return true;
     }
