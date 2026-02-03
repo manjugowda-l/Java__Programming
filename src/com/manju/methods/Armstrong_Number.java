@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class Armstrong_Number {
     static void main() {
         Scanner in=new Scanner(System.in);
-//        int n=in.nextInt();
-//        System.out.println(isArmstrong(n));
+        int n=in.nextInt();
+        System.out.println(isArmstrong(n));
 
-        //Print all the 3 digit Armstrong number
-        for (int i =100;i<1000;i++){
-            if(isArmstrong(i)){
-                System.out.println(i);
-            }
-        }
+//        //Print all the 3 digit Armstrong number
+//        for (int i =100;i<1000;i++){
+//            if(isArmstrong(i)){
+//                System.out.println(i);
+//            }
+//        }
     }
 
     static boolean isArmstrong(int n){
