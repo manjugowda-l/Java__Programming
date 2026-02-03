@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Factorial {
     static void main() {
         Scanner input=new Scanner(System.in);
-        int num;
-        System.out.println(factorial(2));
+        int num= input.nextInt();
+        System.out.println(factorial(num));
     }
     static int factorial(int num){
         int fact=1;
