@@ -2,7 +2,7 @@ package com.manju.Recursion;
 
 public class Fibonacci {
     static void main() {
-        System.out.println(fibo(7));
+        System.out.println(fibo(50));
 
     }
     static int fibo(int n){
