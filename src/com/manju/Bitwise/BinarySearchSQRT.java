@@ -25,6 +25,7 @@ public class BinarySearchSQRT {
                 root = mid;     // store answer
                 start = mid + 1;
             }
+
         }
 
         double incr = 0.1;
