@@ -2,7 +2,7 @@ package com.manju.conditionals_loops;
 
 public class LCM {
     static void main() {
-        System.out.println(gcd(105,224));
+        System.out.println(lcm(2,7));
     }
     static int gcd(int a,int b){
         if(a==0){
