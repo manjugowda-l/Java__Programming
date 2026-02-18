@@ -1,16 +1,17 @@
 package com.manju.Recursion;
 
-public class Factorial {
+public class sum_of_nto1 {
     static void main() {
-        System.out.println(fact(5));
+        System.out.println(sum(5));
 
     }
-    static int fact(int n){
+    static int sum(int n){
         if(n<=1){
             return 1;
         }
-        return (n*fact(n-1));
+        return (n+sum(n-1));
 
 
     }
+
 }
