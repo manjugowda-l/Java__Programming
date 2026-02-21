@@ -5,8 +5,9 @@ import java.util.Arrays;
 public class Merge_Sort {
     static void main() {
         int[] arr ={8,5,6,4,3,1};
-        int[] ans= mergeSort(arr);
-        System.out.println(Arrays.toString(ans));
+//        int[] ans= mergeSort(arr);
+//        System.out.println(Arrays.toString(ans));
+        Arrays.sort(arr);
 
 
     }
