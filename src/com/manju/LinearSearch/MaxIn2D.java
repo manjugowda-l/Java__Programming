@@ -12,6 +12,7 @@ public class MaxIn2D {
         System.out.println(max(arr));
 
     }
+
     static int max(int[][] arr){
         int maxVal=Integer.MIN_VALUE;
         for(int i=0;i< arr.length;i++){
