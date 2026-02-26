@@ -11,6 +11,7 @@ public class BinarySearch {
             System.out.println("Target Value  is present at index " + ans);
         }
     }
+
     static int binarySearch(int[] arr,int target){
         int start=0;
         int end=arr.length-1;
