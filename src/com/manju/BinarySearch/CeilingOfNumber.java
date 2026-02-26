@@ -2,7 +2,7 @@ package com.manju.BinarySearch;
 
 public class CeilingOfNumber {
     static void main() {
-        int[] arr={-18,-12,-6,0,12,14,23,52,67,89};
+        int[] arr={-18,-12,-6,0,12,23,52,67,89};
         int target=14;
         int ans= Ceiling(arr,target);
         System.out.println("Smallest value greater than or equal to target is  " + ans);
