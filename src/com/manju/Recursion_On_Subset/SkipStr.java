@@ -3,7 +3,6 @@ package com.manju.Recursion_On_Subset;
 public class SkipStr {
     static void main() {
         System.out.println(skip("bccapplesda"));
-
     }
     static String skip(String up){
         if(up.isEmpty()){
