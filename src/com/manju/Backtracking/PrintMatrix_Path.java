@@ -13,20 +13,23 @@ public class PrintMatrix_Path {
         path("",board,0,0,path,1);
     }
     static void path(String p,boolean[][] maze,int r,int c,int[][] path,int step){
+        if(!maze[r][c]){
+            return;
+        }
+        maze[r][c]=false;
         path[r][c]=step;
+
         if(r==maze.length-1&&c==maze[0].length-1){
             for(int[] arr:path){
                 System.out.println(Arrays.toString(arr));
             }
             System.out.println(p);
             System.out.println();
+            maze[r][c] = true;
+            path[r][c] = 0;
             return;
         }
-        if(!maze[r][c]){
-            return;
-        }
-        maze[r][c]=false;
-        path[r][c]=step;
+
         if(r<maze.length-1) {
 
             path(p + 'D', maze,r + 1, c,path,step+1);
