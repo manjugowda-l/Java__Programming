@@ -12,5 +12,4 @@ public class Swap {
         System.out.println(a + " " +b);
     }
 
-
 }
