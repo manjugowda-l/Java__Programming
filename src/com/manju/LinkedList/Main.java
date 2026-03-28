@@ -1,7 +1,7 @@
 package com.manju.LinkedList;
 
 public class Main {
-    public static void main(String[] args) {
+     static void main( ) {
 
         LinkedList list = new LinkedList();
 
@@ -12,12 +12,14 @@ public class Main {
 
         list.display();   // 20 -> 15 -> 10 -> 5 -> END
 
-        list.deleteFirst();
-        list.deleteLast();
-        list.delete(1);
+//        list.deleteFirst();
+//        list.deleteLast();
+//        list.delete(1);
+//
+//        list.display();   // 15 -> END
 
-        list.display();   // 15 -> END
-
-        System.out.println(list.find(15));
+//        System.out.println(list.find(15));
+        list.insertRec(88,2);
+        list.display();
     }
 }
