@@ -1,17 +1,33 @@
 package com.manju.basics;
+import java.util.Scanner;
 
 public class kannada {
     public static void main(String[] args) {
-        int reverse=12345;
-        int ans =0;
-        while(reverse>0){
-            int rem=reverse%10;
 
-            ans =ans*10+rem;
-            reverse /=10;
+        Scanner sc = new Scanner(System.in);
 
+        int[][] arr = new int[3][3];
 
+        // Input
+        for(int i = 0; i < arr.length; i++) {
+
+            for(int j = 0; j < arr[i].length; j++) {
+
+                arr[i][j] = sc.nextInt();
+
+            }
         }
-        System.out.println(ans);
+
+        // Output
+        for(int i = 0; i < arr.length; i++) {
+
+            for(int j = 0; j < arr[i].length; j++) {
+
+                System.out.print(arr[i][j] + " ");
+
+            }
+
+            System.out.println();
+        }
     }
 }
